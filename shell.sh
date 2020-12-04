@@ -2,7 +2,7 @@ ARRAY=(-updateAllYourGitReposWithFundingFile -CryptoLongStraddleMonster aggr.tra
 i=0
 for var in "${ARRAY[@]}"
 do
-  git clone "https://dunncreativess:{personalaccesstoken}@github.com/dunncreativess/${var}" $i
+  git clone "https://dunncreativess:{personalaccesstoken}@github.com/dunncreativess/${var}" $i --depth 1
     
   cd $i
   git config --global user.email "jarettrsdunn+git@gmail.com"
